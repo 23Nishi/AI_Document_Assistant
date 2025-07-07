@@ -1,0 +1,87 @@
+Machine Learning (ML) is a subset of artificial intelligence (AI) that enables computers to learn from data and make predictions or decisions without being explicitly programmed. Instead of using fixed rules, ML models detect patterns in data and improve their performance over time with more exposure to new data.
+
+Types of Machine Learning
+Supervised Learning
+
+Definition: The model is trained on labeled data (i.e., input-output pairs).
+
+Goal: Learn a mapping from inputs to outputs.
+
+Examples:
+
+Regression: Predicting continuous values (e.g., house prices).
+
+Classification: Predicting categories (e.g., spam or not spam).
+
+Algorithms: Linear Regression, Decision Trees, Support Vector Machines (SVM), k-NN, Neural Networks.
+
+Unsupervised Learning
+
+Definition: The model is trained on unlabeled data.
+
+Goal: Discover hidden patterns or groupings in data.
+
+Examples:
+
+Clustering: Grouping similar data (e.g., customer segmentation).
+
+Dimensionality Reduction: Reducing data features (e.g., PCA).
+
+Algorithms: K-Means, DBSCAN, Hierarchical Clustering, PCA.
+
+Semi-Supervised Learning
+
+Definition: Uses a small amount of labeled data with a large amount of unlabeled data.
+
+Use Case: When labeling is expensive/time-consuming.
+
+Reinforcement Learning (RL)
+
+Definition: The model learns by interacting with the environment and receiving rewards or penalties.
+
+Goal: Learn a sequence of actions to maximize cumulative reward.
+
+Examples: Game playing (e.g., AlphaGo), robotics.
+
+Algorithms: Q-Learning, Deep Q-Networks (DQN), Policy Gradient.
+
+Common Steps in a Machine Learning Workflow
+Data Collection – Gathering raw data.
+
+Data Preprocessing – Cleaning, normalizing, and preparing data.
+
+Feature Selection/Engineering – Identifying the most useful input features.
+
+Model Selection – Choosing the right algorithm.
+
+Training the Model – Using data to allow the model to learn.
+
+Evaluation – Measuring accuracy, precision, recall, F1-score, etc.
+
+Hyperparameter Tuning – Optimizing model settings for better performance.
+
+Deployment – Putting the model into a real-world system.
+
+Monitoring – Observing performance and retraining if necessary.
+
+Applications of Machine Learning
+Healthcare: Disease prediction, drug discovery.
+
+Finance: Credit scoring, fraud detection.
+
+Retail: Recommendation systems, inventory prediction.
+
+Transportation: Self-driving cars, route optimization.
+
+Agriculture: Crop prediction, soil health analysis.
+
+Key Concepts to Know
+Overfitting vs. Underfitting: Balancing between too much and too little learning.
+
+Bias-Variance Tradeoff: Managing error from incorrect assumptions vs. model complexity.
+
+Cross-Validation: A technique to evaluate how the model generalizes.
+
+Loss Function: A metric that quantifies the error between predicted and actual values.
+
+Gradient Descent: Optimization method to minimize loss function.
