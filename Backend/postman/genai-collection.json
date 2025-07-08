@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "f9ecf868-dd0f-48ea-bd13-7d2f4deb5b91",
+		"name": "GenAI Assistant API",
+		"description": "Postman collection for GenAI FastAPI backend with endpoints: upload, extract summary, ask anything, and challenge.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29694714"
+	},
+	"item": [
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"value": "",
+							"description": "PDF or TXT file to upload",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/upload/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"upload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Extract Summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/upload/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"upload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ask Anything",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"question\": \"What is the use of AI in education?\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/askanything/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"askanything",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Challenge Questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/challenge/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"challenge",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Evaluate Challenge Answers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_answers\": [\"Answer 1\", \"Answer 2\", \"Answer 3\"]\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/challenge/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"challenge",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
